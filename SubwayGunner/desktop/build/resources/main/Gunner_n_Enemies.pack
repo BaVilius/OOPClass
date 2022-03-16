@@ -1,0 +1,19 @@
+
+Gunner_n_Enemies.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+SpriteSheet_player_sliced
+  rotate: false
+  xy: 1, 1
+  size: 360, 360
+  orig: 360, 360
+  offset: 0, 0
+  index: -1
+SpriteSheet_player
+  rotate: false
+  xy: 363, 46
+  size: 360, 315
+  orig: 360, 315
+  offset: 0, 0
+  index: -1
