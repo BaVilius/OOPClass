@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.attendancetracker.studentattendancetracker.Main">
+   <children>
+      <TableView fx:id="studentTable" layoutX="123.0" layoutY="120.0" prefHeight="370.0" prefWidth="534.0">
+         <columns>
+            <TableColumn fx:id="groupCol" prefWidth="75.0" text="Group" />
+            <TableColumn fx:id="nameCol" prefWidth="217.6000213623047" text="Name" />
+            <TableColumn fx:id="lnameCol" minWidth="0.0" prefWidth="240.7999267578125" text="Last Name" />
+         </columns>
+      </TableView>
+      <Label layoutX="269.0" layoutY="44.0" prefHeight="43.0" prefWidth="335.0" text="Student Attendance Table" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button layoutX="10.0" layoutY="120.0" mnemonicParsing="false" onAction="#Add" text="   Add Student   " />
+      <Button layoutX="10.0" layoutY="153.0" mnemonicParsing="false" onAction="#Edit" prefHeight="25.0" prefWidth="104.0" text="    Edit Student   " />
+      <Button layoutX="10.0" layoutY="185.0" mnemonicParsing="false" onAction="#Remove" prefHeight="25.0" prefWidth="104.0" text="Remove Student" />
+      <Button layoutX="691.0" layoutY="211.0" mnemonicParsing="false" onAction="#Filter" prefHeight="25.0" prefWidth="103.0" text=" Filter By Group" />
+      <Button layoutX="553.0" layoutY="490.0" mnemonicParsing="false" onAction="#updateButton" prefHeight="25.0" prefWidth="104.0" text="Update" />
+      <TextField fx:id="groupFilterField" layoutX="714.0" layoutY="132.0" prefHeight="26.0" prefWidth="80.0" promptText="Group Filter" />
+      <TextField fx:id="fromField" layoutX="695.0" layoutY="172.0" prefHeight="26.0" prefWidth="48.0" />
+      <TextField fx:id="toField" layoutX="773.0" layoutY="172.0" prefHeight="26.0" prefWidth="48.0" />
+      <Label layoutX="660.0" layoutY="177.0" text="From:" />
+      <Label layoutX="754.0" layoutY="176.0" text="To:" />
+      <Label layoutX="676.0" layoutY="137.0" text="Group:" />
+      <Button layoutX="123.0" layoutY="489.0" mnemonicParsing="false" onAction="#fileReport" prefHeight="26.0" prefWidth="104.0" text="File Report" />
+      <Button layoutX="695.0" layoutY="244.0" mnemonicParsing="false" onAction="#filterByPeriod" text="Filter By Period" />
+      <Button layoutX="699.0" layoutY="282.0" mnemonicParsing="false" onAction="#filterByBoth" text="Filter By Both" />
+   </children>
+</AnchorPane>

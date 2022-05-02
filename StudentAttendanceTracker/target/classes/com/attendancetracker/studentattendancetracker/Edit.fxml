@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="312.0" prefWidth="519.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.attendancetracker.studentattendancetracker.editStudentController">
+    <children>
+        <TextField fx:id="editNameField" layoutX="55.0" layoutY="74.0" promptText="First Name" />
+        <TextField fx:id="editLNameField" layoutX="55.0" layoutY="115.0" promptText="Last Name" />
+        <TextField fx:id="editGNumberField" layoutX="54.0" layoutY="157.0" promptText="Group number" />
+        <Button layoutX="87.0" layoutY="251.0" mnemonicParsing="false" onAction="#searchButton" text="Find Student" />
+        <Label layoutX="71.0" layoutY="7.0" text="Find Student" underline="true">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+      <Label fx:id="nameLabel" layoutX="216.0" layoutY="78.0" text="Not Found Yet" />
+      <Label fx:id="lnameLabel" layoutX="216.0" layoutY="119.0" text="Not Found Yet" />
+      <Label fx:id="groupLabel" layoutX="216.0" layoutY="161.0" text="Not Found Yet" />
+      <TextField fx:id="changeNameField" layoutX="316.0" layoutY="74.0" promptText="New Name" />
+      <TextField fx:id="changeLNameField" layoutX="316.0" layoutY="115.0" promptText="New Last Name" />
+      <TextField fx:id="changeGNumberField" layoutX="317.0" layoutY="157.0" promptText="New Group" />
+      <Label fx:id="attendanceLabel" layoutX="55.0" layoutY="200.0" text="Not Found Yet" />
+      <Spinner fx:id="changeSpinner" initialValue="1" layoutX="316.0" layoutY="196.0" max="31" min="1" />
+      <Button layoutX="473.0" layoutY="196.0" mnemonicParsing="false" onAction="#addButton" text="Add" />
+      <Button layoutX="364.0" layoutY="251.0" mnemonicParsing="false" onAction="#saveButton" text="Save Changes" />
+      <Label layoutX="342.0" layoutY="7.0" text="Edit Info" underline="true">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

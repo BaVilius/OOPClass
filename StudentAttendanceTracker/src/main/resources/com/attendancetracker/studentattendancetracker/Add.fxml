@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="282.0" prefWidth="257.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.attendancetracker.studentattendancetracker.addStudentController">
+   <children>
+      <TextField fx:id="addNameField" layoutX="55.0" layoutY="74.0" promptText="First Name" />
+      <TextField fx:id="addLNameField" layoutX="55.0" layoutY="115.0" promptText="Last Name" />
+      <TextField fx:id="addGNumberField" layoutX="54.0" layoutY="157.0" promptText="Group number" />
+      <Button layoutX="87.0" layoutY="221.0" mnemonicParsing="false" onAction="#addClicked" text="Add Student" />
+      <Label layoutX="71.0" layoutY="7.0" text="Add Student" underline="true">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
